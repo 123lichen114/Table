@@ -19,7 +19,7 @@
 
 ### 2.1 不同类型的表格
 
-![](./tabular_llm_figures/table_types.png)
+![](./assets/table_types.png)
 
 
 ### 2.2 启发式文本序列格式
@@ -32,25 +32,25 @@
 
 ### 2.3 Markdown格式
 使用 “|” 来分隔不同的单元格，使用 “-” 来分隔表头所在的第一行和其他行，如下所示。
-![](./tabular_llm_figures/markdown_table.png)
+![](./assets/markdown_table.png)
 更适合表示结构较为简单的垂直表格或水平表格，无法很好地表示更复杂的表格结构，比如可能包含合并单元格的层级表格和复杂表格。
 
 ### 2.4 HTML格式
 
 为了表示更复杂的表格结构，尤其是合并单元格，我们可以使用HTML格式来表示表格，除了能表示合并单元格，HTML还可以设定单元格对齐、单元格背景颜色等表格样式。
-![](./tabular_llm_figures/HTML_table.png)
+![](./assets/HTML_table.png)
 
 ### 2.5 Latex格式
 
 在写论文时也会用Latex代码来表示表格，同样可以支持合并单元格，文本对齐等格式，如下所示：
-![](./tabular_llm_figures/latex_table.png)
+![](./assets/latex_table.png)
 
 ### 2.6 小结
 
 需要注意的是，选择哪种表格表示方法可能还需要考虑底座LLM的代码能力和具体的应用场景。
     
 例如对于Excel表格,表格智能LLM就需要理解Excel表格并生成VBA代码，最终执行代码返回更新后的表格。整体流程可能如下所示：
-![](./tabular_llm_figures/potential_tabular_llm_for_excel.png)
+![](./assets/potential_tabular_llm_for_excel.png)
 
 
 ## 3.目前已有工作
