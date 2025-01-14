@@ -58,7 +58,7 @@
 ### 3.0 表格识别解析（图像→文本生成）
 | 模型 | 数据集 | 简介 | 
 | --- | --- | --- | 
-| [Unitable](https://github.com/poloclub/unitable?tab=readme-ov-file) | 在1M和2M的表格图像上预先训练VQ-VAE。1M在PubTabNet和SynthTabNet上进行训练，用于训练2M的额外1M个数据集是Pub VQ-1M和TableBank。| UniTable是一种用于表格识别的统一框架，主要方法如下：<br>**1.视觉编码器的自监督预训练（SSP）**<br>(1)**图像标记化** <br>(2)**图像分块与掩码** <br> **2.统一微调框架**|   |
+| [Unitable](https://github.com/poloclub/unitable?tab=readme-ov-file) | 在1M和2M的表格图像上预先训练VQ-VAE。1M在PubTabNet和SynthTabNet上进行训练，用于训练2M的额外1M个数据集是Pub VQ-1M和TableBank。| UniTable是一种用于表格识别的统一框架，主要方法如下：<br>**1.视觉编码器的自监督预训练（SSP）**<br>(1)**图像标记化** <br>(2)**图像分块与掩码** <br> **2.统一微调框架** 将任务统一表示：输入仅为原始像素形式的图像，输出为标记序列形式的文本，适用于 PDF 输入（可截图转换），且能利用未标注表格图像预训练的视觉编码器。|   |
 
 ### 3.1 表格问答
 
